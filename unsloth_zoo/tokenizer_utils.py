@@ -293,6 +293,8 @@ def fix_untrained_tokens(model, tokenizer, train_dataset, IGNORED_TOKENIZER_NAME
         # Skip the check, since the code below assumes
         # an indexable dataset
         return
+    #TODO temporary fix for IterableDataset
+    return
 
     # Check the first 250, last 250 input_ids
     size_dataset = len(train_dataset)
