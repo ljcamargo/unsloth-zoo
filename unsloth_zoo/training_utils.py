@@ -47,6 +47,8 @@ def fix_zero_training_loss(model, tokenizer, train_dataset):
         # Skip the check since the code below assumes
         # an indexable dataset
         return
+    # TODO: temporary fix
+    return
     
     if len(train_dataset) == 0: return
 
